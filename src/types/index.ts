@@ -8,7 +8,7 @@ export interface Project {
   role: string;
   period: string;
   achievements: string[];
-  livePreviewUrl?: string;
+  website?: string;
   detailImages: { src: string; alt: string; fullWidth?: boolean }[];
   comingSoon?: boolean;
 }

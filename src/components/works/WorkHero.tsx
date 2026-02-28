@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import { Project } from "@/types";
 import { cn } from "@/lib/utils";
@@ -16,21 +19,32 @@ interface WorkHeroProps {
 
 export default function WorkHero({ project }: WorkHeroProps) {
   const gradient = projectGradients[project.slug] || "from-gray-700 to-gray-400";
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   return (
     <div className="relative h-[50vh] w-full overflow-hidden md:h-[60vh]">
-      {/* Gradient fallback — always rendered behind the photo */}
-      <div className={cn("absolute inset-0 bg-gradient-to-br", gradient)} />
+      {/* Gradient fallback — fades out once image is ready */}
+      <div
+        className={cn(
+          "absolute inset-0 bg-gradient-to-br transition-opacity duration-700",
+          gradient,
+          imageLoaded ? "opacity-0" : "opacity-100"
+        )}
+      />
 
-      {/* Photo — shown when heroImage is provided */}
+      {/* Photo — fades in on load */}
       {project.heroImage && (
         <Image
           src={project.heroImage}
           alt={project.title}
           fill
-          className="object-cover"
+          className={cn(
+            "object-cover transition-opacity duration-700",
+            imageLoaded ? "opacity-100" : "opacity-0"
+          )}
           sizes="100vw"
           priority
+          onLoad={() => setImageLoaded(true)}
         />
       )}
 

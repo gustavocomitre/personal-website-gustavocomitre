@@ -25,9 +25,31 @@ export async function generateMetadata({
     return { title: "Project Not Found" };
   }
 
+  const description = project.overview.slice(0, 160);
+  const ogImage = project.heroImage || "/images/og-image.png";
+
   return {
-    title: `${project.title} - Gustavo Comitre`,
-    description: project.overview,
+    title: project.title,
+    description,
+    openGraph: {
+      type: "website",
+      title: `${project.title} — Gustavo Comitre`,
+      description,
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: project.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.title} — Gustavo Comitre`,
+      description,
+      images: [ogImage],
+    },
   };
 }
 

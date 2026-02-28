@@ -4,7 +4,6 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { X } from "lucide-react";
 import { Project } from "@/types";
-import Button from "@/components/ui/Button";
 
 interface WorkContentCardProps {
   project: Project;
@@ -55,6 +54,23 @@ export default function WorkContentCard({ project }: WorkContentCardProps) {
           },
         ]
       : []),
+    ...(project.website
+      ? [
+          {
+            label: "Website",
+            content: (
+              <a
+                href={project.website.startsWith("http") ? project.website : `https://${project.website}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-[family-name:var(--font-body)] text-sm text-[#111] underline underline-offset-4 hover:opacity-60 transition-opacity"
+              >
+                {project.website.replace(/^https?:\/\//, "")}
+              </a>
+            ),
+          },
+        ]
+      : []),
   ];
 
   return (
@@ -62,7 +78,7 @@ export default function WorkContentCard({ project }: WorkContentCardProps) {
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.2, ease: [0.21, 0.47, 0.32, 0.98] }}
-      className="relative -mt-16 mx-auto max-w-[1120px] rounded-t-[40px] bg-white p-8 md:p-12"
+      className="relative -mt-16 mx-auto max-w-[1120px] rounded-t-[40px] bg-white p-8 shadow-[16px_16px_60px_-8px_rgba(0,0,0,0.2)] md:p-12"
     >
       {/* Close button */}
       <Link
@@ -95,13 +111,6 @@ export default function WorkContentCard({ project }: WorkContentCardProps) {
           </motion.div>
         ))}
       </div>
-
-      {/* Live preview button */}
-      {project.livePreviewUrl && (
-        <Button href={project.livePreviewUrl} variant="primary" showArrow>
-          Live Preview
-        </Button>
-      )}
     </motion.div>
   );
 }

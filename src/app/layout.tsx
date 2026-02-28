@@ -10,15 +10,65 @@ const instrumentSans = Instrument_Sans({
   weight: ["400", "500", "600", "700"],
 });
 
+const BASE_URL = "https://gustavocomitre.com";
+
 export const metadata: Metadata = {
-  title: "Gustavo Comitre - Product Director | Health Tech",
+  metadataBase: new URL(BASE_URL),
+  title: {
+    default: "Gustavo Comitre — Head of Product | Healthcare",
+    template: "%s — Gustavo Comitre",
+  },
   description:
-    "Product Director passionate about building beautiful healthcare products that improve millions of lives. Led hypergrowth at Docplanner (90M+ users), founded CUCO Health (acquired), and building Deepful.",
+    "Head of Product in Healthcare. 90M+ users impacted, 3 companies built. Obsessed with shipping beautiful health products that change lives.",
+  keywords: [
+    "Gustavo Comitre",
+    "Head of Product",
+    "Product Director",
+    "Healthcare",
+    "Health Tech",
+    "Digital Health",
+    "Docplanner",
+    "Deepful",
+    "Zaia Health",
+    "CUCO Health",
+    "Product Management",
+    "Product Leadership",
+  ],
+  authors: [{ name: "Gustavo Comitre", url: BASE_URL }],
+  creator: "Gustavo Comitre",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
   openGraph: {
-    title: "Gustavo Comitre - Product Director | Health Tech",
-    description:
-      "Product Director passionate about building beautiful healthcare products that improve millions of lives.",
     type: "website",
+    url: BASE_URL,
+    siteName: "Gustavo Comitre",
+    title: "Gustavo Comitre — Head of Product | Healthcare",
+    description:
+      "Head of Product in Healthcare. 90M+ users impacted, 3 companies built. Obsessed with shipping beautiful health products that change lives.",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Gustavo Comitre — Head of Product | Healthcare",
+      },
+    ],
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@gustavocomitre",
+    creator: "@gustavocomitre",
+    title: "Gustavo Comitre — Head of Product | Healthcare",
+    description:
+      "Head of Product in Healthcare. 90M+ users impacted, 3 companies built. Obsessed with shipping beautiful health products that change lives.",
+    images: ["/images/og-image.png"],
+  },
+  alternates: {
+    canonical: BASE_URL,
   },
 };
 

@@ -21,14 +21,14 @@ export const projects: Project[] = [
     coverImage: "/images/zaia-card.png",
     heroImage: "/images/zaia-hero.png",
     overview:
-      "A Whoop for everyday people — wearable health tracking designed for everyone, not just athletes. Building a product that makes health monitoring accessible, intuitive, and actionable for the general population.",
+      "Zaia Health: a Whoop made for everyday people, not just athletes. Building a product that makes health monitoring accessible, intuitive, and actionable for the general population.",
     role: "Co-founder",
     period: "2025 – Present",
     achievements: [
-      "Developing wearable health tech for the everyday person",
-      "Focused on making health data accessible and actionable",
-      "Building with a small, passionate team of friends",
+      "Integrated with our own Zaia band and soon Zaia Ring",
+      "AI agents via voice integrated with your health data and calendar",
     ],
+    website: "https://zaiahealth.ai",
     detailImages: [],
   },
   {
@@ -49,7 +49,7 @@ export const projects: Project[] = [
       "1M+ minutes of AI voice conversations per year",
       "Led the company to SOC 2 certification",
     ],
-    livePreviewUrl: "https://deepful.com",
+    website: "https://deepful.ai",
     detailImages: [],
   },
   {
@@ -74,6 +74,7 @@ export const projects: Project[] = [
       "Built doctor-patient chat from 20k to 5.5M messages monthly",
       "Converted the app to an A-Class App with 250k+ reviews and 4.8/5 rating",
     ],
+    website: "https://docplanner.com",
     detailImages: [],
   },
   {
@@ -89,7 +90,7 @@ export const projects: Project[] = [
     achievements: [
       "Docplanner (2024–2025): M&A opportunity analysis for EHR + AI products, sharing knowledge and insights with product teams",
       "Assertiva (2019–2020): Reorganized 45 developers into impact-focused squads, coached PMs, Tech Leads, and CTO in experimentation culture, led platform redesign",
-      "Code:Nation (2017–2019): Built product from scratch for thousands of users — company was acquired by Trybe",
+      "XP Health (2019): During my three-month sabbatical at Stanford University, I worked closely with the XP Health founders to launch the first version of their vision-care platform in the US market (XP Health has raised over USD 55 million in the following years)",
     ],
     detailImages: [],
   },
@@ -110,6 +111,7 @@ export const projects: Project[] = [
       "Successful exit: acquired by Raia Drogasil (largest drugstore in LATAM)",
       "Responsible for fundraising",
     ],
+    website: "https://cucohealth.com",
     detailImages: [],
   },
 ];
