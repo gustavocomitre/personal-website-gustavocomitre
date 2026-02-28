@@ -1,0 +1,117 @@
+import { Project } from "@/types";
+
+export const projects: Project[] = [
+  {
+    slug: "soon",
+    title: "My next adventure...",
+    tags: ["Fitness", "Healthcare"],
+    coverImage: "/images/hevy-card.png",
+    heroImage: "/images/hevy-hero.png",
+    overview: "",
+    role: "",
+    period: "",
+    achievements: [],
+    comingSoon: true,
+    detailImages: [],
+  },
+  {
+    slug: "zaia-health",
+    title: "Zaia Health",
+    tags: ["Wearables", "Health Tech"],
+    coverImage: "/images/zaia-card.png",
+    heroImage: "/images/zaia-hero.png",
+    overview:
+      "A Whoop for everyday people — wearable health tracking designed for everyone, not just athletes. Building a product that makes health monitoring accessible, intuitive, and actionable for the general population.",
+    role: "Co-founder",
+    period: "2025 – Present",
+    achievements: [
+      "Developing wearable health tech for the everyday person",
+      "Focused on making health data accessible and actionable",
+      "Building with a small, passionate team of friends",
+    ],
+    detailImages: [],
+  },
+  {
+    slug: "deepful",
+    title: "Deepful",
+    tags: ["AI", "Pharma & Healthcare"],
+    coverImage: "/images/deepful-card.png",
+    heroImage: "/images/deepful-hero.png",
+    overview:
+      "Built from scratch an AI voice role-play and coaching platform for pharmaceutical sales and medical teams. Deepful helps reps and MSLs practise complex HCP conversations through realistic simulations. Raised 1M euros in funding.",
+    role: "Founder & Head of Product",
+    period: "August 2023 – Present",
+    achievements: [
+      "Scaled from 0 to 28k users in 2 years",
+      "Adopted by top pharma companies: J&J, Merz, Merck, Besins, Eurofarma, Aché, Libbs, EMS, and others",
+      "4× user growth from 2024 to 2025",
+      "92%+ CSAT across both managers and end users",
+      "1M+ minutes of AI voice conversations per year",
+      "Led the company to SOC 2 certification",
+    ],
+    livePreviewUrl: "https://deepful.com",
+    detailImages: [],
+  },
+  {
+    slug: "docplanner",
+    title: "Docplanner",
+    tags: ["Healthcare", "Patients & Doctors"],
+    coverImage: "/images/docplanner-card.png",
+    heroImage: "/images/docplanner-hero.png",
+    overview:
+      "Led the Patients' product area at Docplanner — the world's #1 doctor booking platform, operating in 14 countries with 90M+ monthly active users. Built the app strategy from scratch, transforming it into the main source of online appointments and driving hypergrowth across web and mobile.",
+    role: "Product Director Patients / Product Lead / Product Advisor",
+    period: "2019 – 2025",
+    achievements: [
+      "App grew from 10k to 4.3M MAU in 3 years",
+      "Built flywheel strategy: 1M downloads/month with zero ads",
+      "First Google Health partnership outside the US (EU+LATAM)",
+      "First healthcare provider on Google Business Profiles & Apple outside US, bringing +1.1M extra appointments/year",
+      "Led 6 teams with 60+ people across SEO, CVR, Apps, Retention, and more",
+      "Participated in 2 M&A processes (65M+ euros in deals)",
+      "Drove 400k+ euros/year in cost savings and 300k+ euros/year in new revenue",
+      "Reached 1B impressions/month from Google Search, 90M+ MAU (Web+App)",
+      "Built doctor-patient chat from 20k to 5.5M messages monthly",
+      "Converted the app to an A-Class App with 250k+ reviews and 4.8/5 rating",
+    ],
+    detailImages: [],
+  },
+  {
+    slug: "consulting",
+    title: "Consulting & Advising",
+    tags: ["Strategy", "Product Advisory"],
+    coverImage: "/images/others-card.png",
+    heroImage: "/images/others-hero.png",
+    overview:
+      "Product advisory and consulting work helping tech companies improve their product structure, processes, and impact. Focused on experimentation culture, data-driven decision-making, and organizational design for product teams.",
+    role: "Product Advisor",
+    period: "2017 – 2025",
+    achievements: [
+      "Docplanner (2024–2025): M&A opportunity analysis for EHR + AI products, sharing knowledge and insights with product teams",
+      "Assertiva (2019–2020): Reorganized 45 developers into impact-focused squads, coached PMs, Tech Leads, and CTO in experimentation culture, led platform redesign",
+      "Code:Nation (2017–2019): Built product from scratch for thousands of users — company was acquired by Trybe",
+    ],
+    detailImages: [],
+  },
+  {
+    slug: "cuco-health",
+    title: "CUCO Health",
+    tags: ["Health App", "Exit"],
+    coverImage: "/images/cuco-card.png",
+    heroImage: "/images/cuco-hero.png",
+    overview:
+      "CUCO was a pill reminder app to help patients follow their medical treatments. The company was acquired by Raia Drogasil — the largest drugstore company in LATAM with 2.3k stores (BVMF:RADL3). After the acquisition, the product evolved to allow patients to get free medication samples from pharma directly at Raia Drogasil pharmacies.",
+    role: "Founder & Head of Product",
+    period: "October 2014 – December 2017",
+    achievements: [
+      "Built iOS/Android/Web apps from scratch to hundreds of thousands MAU",
+      "Zero ads — fully organic growth",
+      "Featured App on both App Store and Google Play",
+      "Successful exit: acquired by Raia Drogasil (largest drugstore in LATAM)",
+      "Responsible for fundraising",
+    ],
+    detailImages: [],
+  },
+];
+
+export const activeProjects = projects.filter((p) => !p.comingSoon);

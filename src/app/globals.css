@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Instrument Sans", sans-serif;
+  --font-body: "Instrument Sans", sans-serif;
+
+  --color-background: #ffffff;
+  --color-foreground: #111111;
+  --color-muted: #666666;
+  --color-muted-light: #999999;
+  --color-border: #e5e5e5;
+  --color-card-dark: #111111;
+
+  --spacing-section: 80px;
+  --spacing-section-mobile: 48px;
+
+  --radius-card: 20px;
+  --radius-image: 12px;
+  --radius-pill: 9999px;
+
+  --max-width: 1120px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-foreground);
+  background-color: var(--color-background);
+}
