@@ -23,8 +23,10 @@ export const projects: Project[] = [
     overview:
       "Zaia Health: a Whoop made for everyday people, not just athletes. Building a product that makes health monitoring accessible, intuitive, and actionable for the general population.",
     role: "Co-founder",
-    period: "2025 – Present",
+    period: "2026 – Present",
     achievements: [
+      "Beautiful beta version released to 250 beta testers",
+      "Integrated with Apple Health",
       "Integrated with our own Zaia band and soon Zaia Ring",
       "AI agents via voice integrated with your health data and calendar",
     ],
