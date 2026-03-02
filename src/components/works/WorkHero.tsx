@@ -5,29 +5,19 @@ import Image from "next/image";
 import { Project } from "@/types";
 import { cn } from "@/lib/utils";
 
-const projectGradients: Record<string, string> = {
-  docplanner: "from-blue-900 to-blue-600",
-  deepful: "from-violet-900 to-violet-600",
-  "cuco-health": "from-emerald-900 to-emerald-600",
-  consulting: "from-slate-800 to-slate-500",
-  "zaia-health": "from-rose-900 to-rose-600",
-};
-
 interface WorkHeroProps {
   project: Project;
 }
 
 export default function WorkHero({ project }: WorkHeroProps) {
-  const gradient = projectGradients[project.slug] || "from-gray-700 to-gray-400";
   const [imageLoaded, setImageLoaded] = useState(false);
 
   return (
     <div className="relative h-[50vh] w-full overflow-hidden md:h-[60vh]">
-      {/* Gradient fallback — fades out once image is ready */}
+      {/* Neutral gray placeholder — fades out once image is ready */}
       <div
         className={cn(
-          "absolute inset-0 bg-gradient-to-br transition-opacity duration-700",
-          gradient,
+          "absolute inset-0 bg-gray-200 transition-opacity duration-700",
           imageLoaded ? "opacity-0" : "opacity-100"
         )}
       />
