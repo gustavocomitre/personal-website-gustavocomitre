@@ -71,11 +71,13 @@ export default function Hero() {
       >
         <div className="relative h-full w-full lg:max-w-[900px]">
           <Image
-            src="/images/hero-portrait.png"
+            src="/images/hero-portrait.webp"
             alt="Gustavo Comitre"
             fill
             className="object-cover object-top"
             priority
+            placeholder="blur"
+            blurDataURL="data:image/webp;base64,UklGRqQAAABXRUJQVlA4WAoAAAAQAAAACQAACAAAQUxQSFAAAAANuS5E9D/guJEkRcpqeO36byYdY5cbERMQfbHAzebwlFY/VyJWfgaCmEAkiI0AAyT82V/5G4BI+ZL2YoYQUL4kyEAaSRIGYH/JQvixAQNMBFZQOCAuAAAAsAEAnQEqCgAJAAVAfCWMAnQA1uPIAADK5ZTvGsF6WfzFzWnB9MnDgwLXjwAAAA=="
           />
         </div>
 
