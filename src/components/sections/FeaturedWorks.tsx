@@ -12,9 +12,9 @@ export default function FeaturedWorks() {
       <Container>
         {/* Section header */}
         <FadeIn>
-          <div className="mb-10 flex items-start justify-between">
+          <div className="mb-10 flex items-center justify-between">
             <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold tracking-[-0.03em] text-[#111] md:text-4xl">
-              Featured<br className="md:hidden" /> works
+              Featured works
             </h2>
             <a
               href="https://www.linkedin.com/in/gustavocomitre/"
