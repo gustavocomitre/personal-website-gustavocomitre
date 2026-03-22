@@ -22,7 +22,8 @@ export default function FeaturedWorks() {
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm text-[#666] transition-colors hover:text-[#111]"
             >
-              Check my LinkedIn
+              <span className="hidden sm:inline">Check my LinkedIn</span>
+              <span className="sm:hidden">My LinkedIn</span>
               <ArrowRight className="h-4 w-4" />
             </a>
           </div>
