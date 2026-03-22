@@ -66,10 +66,10 @@ export default function Hero() {
         initial={{ opacity: 0, scale: 0.97 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.9, delay: 0.15, ease: [0.21, 0.47, 0.32, 0.98] }}
-        className="relative min-h-0 flex-1 w-full lg:absolute lg:inset-0 lg:z-0 lg:flex lg:h-auto lg:justify-center"
+        className="relative min-h-0 flex-1 w-full lg:absolute lg:inset-0 lg:z-0 lg:h-full"
         style={{ willChange: "transform", backfaceVisibility: "hidden" }}
       >
-        <div className="relative h-full w-full lg:max-w-[900px]">
+        <div className="relative h-full w-full">
           <Image
             src="/images/hero-portrait.webp"
             alt="Gustavo Comitre"

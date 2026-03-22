@@ -22,7 +22,28 @@
       "Bash(ls -lt /Users/gustavocomitre/Downloads/*.png /Users/gustavocomitre/Downloads/*.jpg /Users/gustavocomitre/Downloads/*.jpeg /Users/gustavocomitre/Downloads/*.webp)",
       "Bash(git -C /Users/gustavocomitre/Claude/gustavocomitre-website status)",
       "Bash(git init)",
-      "Bash(git add .)"
+      "Bash(git add .)",
+      "Bash(git -C:*)",
+      "Bash(git add src/app/layout.tsx src/app/works/[slug]/page.tsx src/components/works/WorkContentCard.tsx src/components/works/WorkHero.tsx src/data/projects.ts src/types/index.ts public/images/og-image.png)",
+      "Bash(git commit:*)",
+      "Bash(git push origin main)",
+      "Bash(git add src/data/projects.ts)",
+      "Bash(git add src/components/works/WorkHero.tsx README.md)",
+      "Bash(ls -lh /Users/gustavocomitre/Claude/gustavocomitre-website/public/images/*.png)",
+      "Bash(sort -k5 -rh)",
+      "Bash(cwebp -version)",
+      "Bash(ffmpeg -version)",
+      "Bash(node -e \"require\\(''sharp''\\)\")",
+      "Bash(ls public/images/*.png)",
+      "Bash(xargs rm)",
+      "Bash(git add public/images/ src/data/projects.ts src/components/sections/Hero.tsx)",
+      "Bash(python3 -m json.tool)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d, indent=2\\)\\)\")",
+      "Bash(python3 -c \":*)",
+      "Bash(git add src/components/sections/Hero.tsx)",
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "Bash(git add:*)"
     ]
   }
 }
